@@ -34,10 +34,15 @@ plugins:
             testMode: ${SEGMENT_TEST_MODE}
             appVersion: ${RHDH_VERSION}
             backstageVersion: ${BACKSTAGE_VERSION}
+  # - package: oci://quay.io/rhdh/backstage-community-plugin-scaffolder-backend-module-regex@sha256:464a06c6cf896c3d737ae757b7e51e6a7535a781a803c47a5f13833e191f0548
+  # Tag: 1.10--2.15.1, Build date: 2026-05-27T17:37:41Z
+  # new approach using oci images: to switch to the new approach, uncomment
+  # the 'package' line above and remove the next two lines, keeping the pluginConfig.
+  # disabled: true
   - package: ./dynamic-plugins/dist/backstage-community-plugin-scaffolder-backend-module-regex-dynamic
     disabled: false
-  # - package: oci://quay.io/rhdh/backstage-plugin-techdocs@sha256:c7573ee8ec0ea14a352672c764fc18c9bb835be90852982b5fb475804009ae78
-  # Tag: 1.10--1.17.2, Build date: 2026-05-21T21:39:11Z
+  # - package: oci://quay.io/rhdh/backstage-plugin-techdocs@sha256:f01cd7673862ab441bfe36cdc183dc99230acc71eeb48019a570ca2395114570
+  # Tag: 1.10--1.17.2, Build date: 2026-05-27T17:45:35Z
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -85,8 +90,8 @@ plugins:
                   props:
                     name: Documentation
                     icon: docs
-  # - package: oci://quay.io/rhdh/backstage-plugin-techdocs-backend@sha256:5ca14e01a887ebba1c5082bc2dc1d51e9811e829141d12ecdc4490ae7d9d797e
-  # Tag: 1.10--2.1.6, Build date: 2026-05-21T21:37:09Z
+  # - package: oci://quay.io/rhdh/backstage-plugin-techdocs-backend@sha256:263d4765a8ebbf415f4db839620b291a72b4f6308fe2f55294143695f7728b78
+  # Tag: 1.10--2.1.6, Build date: 2026-05-27T17:35:09Z
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -99,8 +104,8 @@ plugins:
           runIn: local
         publisher:
           type: local
-  # - package: oci://quay.io/rhdh/backstage-plugin-techdocs-module-addons-contrib@sha256:c23ed0c206b4d90981d29978cb58c1f67b55dfe09f6a03f5fa2175767fa325bf
-  # Tag: 1.10--1.1.34, Build date: 2026-05-21T21:30:58Z
+  # - package: oci://quay.io/rhdh/backstage-plugin-techdocs-module-addons-contrib@sha256:242d712ccb62ef32e45fb163cd7b276539842942e3c513106dc4e4eb7d33f192
+  # Tag: 1.10--1.1.34, Build date: 2026-05-27T17:31:12Z
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -677,6 +682,10 @@ plugins:
                   seconds: 15
                 timeout:
                   minutes: 50
+  # - package: oci://quay.io/rhdh/backstage-community-plugin-catalog-backend-module-pingidentity@sha256:b4f14922aa5bc65041e1032e31a36ba3b0861dc9bc1ab173c4230e439f7f885f
+  # new approach using oci images: to switch to the new approach, uncomment
+  # the 'package' line above and remove the next two lines, keeping the pluginConfig.
+  # disabled: true
   - package: ./dynamic-plugins/dist/backstage-community-plugin-catalog-backend-module-pingidentity-dynamic
     disabled: true
     pluginConfig:
@@ -696,6 +705,10 @@ plugins:
                   minutes: 10
                 initialDelay:
                   seconds: 15
+  # - package: oci://quay.io/rhdh/backstage-community-plugin-catalog-backend-module-scaffolder-relation-processor@sha256:981e03ff5ca46e21bf59c46270370728854c0fd1cd291925ec93dc5750266da9
+  # new approach using oci images: to switch to the new approach, uncomment
+  # the 'package' line above and remove the next two lines, keeping the pluginConfig.
+  # disabled: true
   - package: ./dynamic-plugins/dist/backstage-community-plugin-catalog-backend-module-scaffolder-relation-processor-dynamic
     disabled: true
   # - package: oci://quay.io/rhdh/backstage-community-plugin-rbac@sha256:ebe61520f36b0502b3a32a91e19e0459322485c595b9205c8d143bf3032ad891
@@ -726,7 +739,7 @@ plugins:
               rbac:
                 parent: default.admin
                 icon: rbacIcon
-  # - package: oci://quay.io/rhdh/backstage-community-plugin-scaffolder-backend-module-kubernetes@sha256:2f5ea9a9d0dd45e1672477f6a8284ade4cd4f2353411cacf785894fe021e46ab
+  # - package: oci://quay.io/rhdh/backstage-community-plugin-scaffolder-backend-module-kubernetes@sha256:7528cf7ab70088f0b2fad47e4d544fb252a0e429341365fcede8a43966b95fe7
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -792,7 +805,7 @@ plugins:
                     anyOf:
                       - hasAnnotation: backstage.io/kubernetes-id
                       - hasAnnotation: backstage.io/kubernetes-namespace
-  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-github@sha256:c5b136a6e87f85d63a7f57c454d383f0d1bdad147003d19a85d2496e49d48c0c
+  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-github@sha256:f31269083753e87a6fc1710e1eaee9de39f2a34412132347563e0394eb630d71
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -804,7 +817,7 @@ plugins:
           github:
             providerId:
               organization: ${GITHUB_ORG}
-  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-github-org@sha256:62ea0b2378651cf2ca7b137d0920be2a0a2424e9e8fc59c1f9228d9413b67fca
+  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-github-org@sha256:ecea124f143463b9ef947078261d79c4655e76c3205cdd94c31f309b28de2b8f
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -825,7 +838,7 @@ plugins:
                 seconds: 15
               timeout:
                 minutes: 15
-  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-gitlab@sha256:64996c51bb54e8e6167fb3d9369faf65eda2620e50e6a9b9ff4fffb259f9530e
+  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-gitlab@sha256:fcc71cb26d4de38ad32585d665d8c1442900eb6d3cc528cf0deb3a5316e03529
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -845,7 +858,7 @@ plugins:
                   minutes: 3
                 initialDelay:
                   seconds: 15
-  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-gitlab-org@sha256:84d9f9b364a4526a11389a8869482f488d15d2c9f713c9f7b2e55e6676a2a9ca
+  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-gitlab-org@sha256:e21ce2dd00f222adc1a21c1a55ac91e3c60882fb5736df439efcde52f8ff5ded
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -866,7 +879,7 @@ plugins:
                   minutes: 3
                 initialDelay:
                   seconds: 15
-  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-ldap@sha256:2dafbbdbc239846df5ae2bc451fe144a065e61b02bf89b558d8dfd8f51bd2fd3
+  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-ldap@sha256:ba077aefc5bd16c21bfc048bce90c62919cff8b28954bd413a540bdfbf63b820
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -896,7 +909,7 @@ plugins:
                   seconds: 15
                 timeout:
                   minutes: 15
-  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-msgraph@sha256:48aaafc0e719ab77970282bf3372398c8ef3c1156526229b1e1eb9d4bc2bc090
+  # - package: oci://quay.io/rhdh/backstage-plugin-catalog-backend-module-msgraph@sha256:32d6467736c930bc6c5ee64e6c225c7bfd0e2e0e334dfdf76f4c82006405357a
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -918,7 +931,7 @@ plugins:
                   seconds: 15
                 timeout:
                   minutes: 15
-  - package: oci://quay.io/rhdh/backstage-plugin-events-backend-module-github@sha256:7eba4ce49fdcddad554bd2eb732b19402527a65e0cac86f01c22a646af6f4bdf
+  - package: oci://quay.io/rhdh/backstage-plugin-events-backend-module-github@sha256:aaab9431194fbf3f582ceffcd9af2f8bc8dc3a8744789648a8a00cfbe7bae4f8
     disabled: true
     pluginConfig:
       events:
@@ -928,7 +941,7 @@ plugins:
         modules:
           github:
             webhookSecret: ${GITHUB_WEBHOOK_SECRET}
-  # - package: oci://quay.io/rhdh/backstage-plugin-kubernetes@sha256:605d9ad4186ee32b8c7a97fbadbbc4817bfdda226b3ae765cea6bf7f46267f51
+  # - package: oci://quay.io/rhdh/backstage-plugin-kubernetes@sha256:2ee8b69ee084083741ea346be42db8d36f4772d285dc07f0d82922541c2e590f
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -948,7 +961,7 @@ plugins:
                     anyOf:
                       - hasAnnotation: backstage.io/kubernetes-id
                       - hasAnnotation: backstage.io/kubernetes-namespace
-  # - package: oci://quay.io/rhdh/backstage-plugin-kubernetes-backend@sha256:57a94c3f1b61665a8c35fe841dec2f5ebcdf72c72cb3d88cfdc3c747b89341c0
+  # - package: oci://quay.io/rhdh/backstage-plugin-kubernetes-backend@sha256:d4a2f81691800c3941e6fbb60e2c0383819b8da0c8dbc2ca315f0967314102c8
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -966,7 +979,7 @@ plugins:
                 authProvider: serviceAccount
                 skipTLSVerify: true
                 serviceAccountToken: ${K8S_CLUSTER_TOKEN}
-  # - package: oci://quay.io/rhdh/backstage-plugin-notifications@sha256:4f44f9f8e5c80a1f69ff76aa566b8f52cad78cb980e257867dba0b71279e6aa7
+  # - package: oci://quay.io/rhdh/backstage-plugin-notifications@sha256:aa0ff0fb24a80866bdede8edf6a4426742b641eb9b3249b3921a6f7a67fbb810
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -985,7 +998,7 @@ plugins:
                       webNotificationsEnabled: false
                   importName: NotificationsSidebarItem
                 path: /notifications
-  # - package: oci://quay.io/rhdh/backstage-plugin-notifications-backend@sha256:c9ba0fa03fce6431558705695b67054c23d65630120a34725389ffb745bc6653
+  # - package: oci://quay.io/rhdh/backstage-plugin-notifications-backend@sha256:6f6e7c5453f86e706aff97123582382c699bedc5f70952355c05c6ddfe6a4c53
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -994,7 +1007,7 @@ plugins:
     pluginConfig:
       notifications:
         concurrencyLimit: 10
-  # - package: oci://quay.io/rhdh/backstage-plugin-notifications-backend-module-email@sha256:7f7ad8b236d35c5f7ab15efc0c386755f4d724aea8b0eb5d27867dbb6e543ed9
+  # - package: oci://quay.io/rhdh/backstage-plugin-notifications-backend-module-email@sha256:d8b6c90a67350d85f050667440e9f9c8eaf7afa4fde2bd8e485a2531fe93cb0d
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -1013,19 +1026,19 @@ plugins:
             sender: ${EMAIL_SENDER}
             broadcastConfig:
               receiver: users
-  # - package: oci://quay.io/rhdh/backstage-plugin-scaffolder-backend-module-github@sha256:53e243272ddb6eb8a7ec0df242a3ba7280f844b325f4c197b5685524b905a399
+  # - package: oci://quay.io/rhdh/backstage-plugin-scaffolder-backend-module-github@sha256:bc660e78fce171d2c3e5814c5c46489c7a38e87be2a1f6063bfd334add7bad35
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
   - package: ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-github-dynamic
     disabled: true
-  # - package: oci://quay.io/rhdh/backstage-plugin-scaffolder-backend-module-gitlab@sha256:d3ee618645b4df0f83def91604fe96498ea25a5259efa93c5e0be9f1b8597bd8
+  # - package: oci://quay.io/rhdh/backstage-plugin-scaffolder-backend-module-gitlab@sha256:ba50b2903b838a7924ed6042096b295d3df15d1efcc498c920916c2a8e64e210
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
   - package: ./dynamic-plugins/dist/backstage-plugin-scaffolder-backend-module-gitlab-dynamic
     disabled: true
-  # - package: oci://quay.io/rhdh/backstage-plugin-signals@sha256:138e432c275de74b6dbbf18b4ac9553012ccb9cbcf4c3085abc470bcda423b8e
+  # - package: oci://quay.io/rhdh/backstage-plugin-signals@sha256:e9e903a11eb22c07e1b6e74fb7f7295f3a7f29451f77db9df288259f850603c2
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -1035,7 +1048,7 @@ plugins:
       dynamicPlugins:
         frontend:
           backstage.plugin-signals: {}
-  # - package: oci://quay.io/rhdh/backstage-plugin-signals-backend@sha256:9e88fffdb5b0b8b5ecd08795893a22c00c945a40e8063832d656822c78e388c5
+  # - package: oci://quay.io/rhdh/backstage-plugin-signals-backend@sha256:c5fdfd2db2fc86643cdadda582f4826c28b436fa1f458caee92f57ee6f42388e
   # new approach using oci images: to switch to the new approach, uncomment
   # the 'package' line above and remove the next two lines, keeping the pluginConfig.
   # disabled: true
@@ -1143,13 +1156,13 @@ plugins:
       dynamicPlugins:
         frontend:
           red-hat-developer-hub.backstage-plugin-orchestrator-form-widgets: {}
-  - package: oci://quay.io/rhdh/red-hat-developer-hub-backstage-plugin-scaffolder-backend-module-orchestrator@sha256:8b288b55a3b151f3614eee4eb7cb373547ea4ae1439d7621d218cf39f0f0dbf1
+  - package: oci://quay.io/rhdh/red-hat-developer-hub-backstage-plugin-scaffolder-backend-module-orchestrator@sha256:db15bcf46825b8adf4516d708586cd81c420930891ecc3505463c18126673f88
     disabled: true
     pluginConfig:
       orchestrator:
         dataIndexService:
           url: http://sonataflow-platform-data-index-service
-  - package: oci://quay.io/rhdh/roadiehq-scaffolder-backend-module-http-request@sha256:e072c7c7dc25599f09e87585a89d9c938208956235b8d0a697e5e910883440e1
+  - package: oci://quay.io/rhdh/roadiehq-scaffolder-backend-module-http-request@sha256:4868bcc51d9f6356cf76fdfa0e1ad9f151c7a0518fb840ab7c909972d84d015d
     disabled: true
   - package: oci://ghcr.io/redhat-developer/rhdh-plugin-export-overlays/backstage-community-plugin-quay:bs_1.49.4__1.32.1
     disabled: true

@@ -2,11 +2,11 @@
   "backstage-plugin-signals": {
     "workspacePath": "backstage/plugins/signals",
     "registryReference": "quay.io/rhdh/backstage-plugin-signals:1.10--0.0.29",
-    "digest": "sha256:138e432c275de74b6dbbf18b4ac9553012ccb9cbcf4c3085abc470bcda423b8e",
-    "build-date": "2026-05-21T21:11:28Z",
-    "upstream": "https://github.com/redhat-developer/rhdh-plugin-export-overlays/tree/release-1.10 @ a7bb86b75564741f484bfddd5bd2af3bcabfa7b9",
+    "digest": "sha256:e9e903a11eb22c07e1b6e74fb7f7295f3a7f29451f77db9df288259f850603c2",
+    "build-date": "2026-05-27T17:03:08Z",
+    "upstream": "https://github.com/redhat-developer/rhdh-plugin-export-overlays/tree/release-1.10 @ 9d0195bb8b4c4ad2a168fa43fa54e53b6c589494",
     "midstream": "https://gitlab.cee.redhat.com/rhidp/rhdh-plugin-catalog/-/commits/rhdh-1.10-rhel-9",
-    "vcs-ref": "b97319aaa1387e1e4969ff20ce4788885a9bc28c",
+    "vcs-ref": "06ba08ed5fe823226ad952134321c14f054556c7",
     "support": "tech-preview",
     "io.backstage.dynamic-packages": "W3siYmFja3N0YWdlLXBsdWdpbi1zaWduYWxzIjp7Im5hbWUiOiJAYmFja3N0YWdlL3BsdWdpbi1zaWduYWxzLWR5bmFtaWMiLCJ2ZXJzaW9uIjoiMC4wLjI5IiwiYmFja3N0YWdlIjp7InJvbGUiOiJmcm9udGVuZC1wbHVnaW4iLCJwbHVnaW5JZCI6InNpZ25hbHMiLCJwbHVnaW5QYWNrYWdlcyI6WyJAYmFja3N0YWdlL3BsdWdpbi1zaWduYWxzIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1iYWNrZW5kIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1ub2RlIiwiQGJhY2tzdGFnZS9wbHVnaW4tc2lnbmFscy1yZWFjdCJdfSwicmVwb3NpdG9yeSI6eyJ0eXBlIjoiZ2l0IiwidXJsIjoiaHR0cHM6Ly9naXRodWIuY29tL2JhY2tzdGFnZS9iYWNrc3RhZ2UiLCJkaXJlY3RvcnkiOiJwbHVnaW5zL3NpZ25hbHMifSwibGljZW5zZSI6IkFwYWNoZS0yLjAifX1d"
   }
